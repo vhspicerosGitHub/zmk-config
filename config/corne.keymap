@@ -11,10 +11,7 @@
 / {
         keymap {
                 compatible = "zmk,keymap,conditional-layers";
-                conditional_layer_1 {
-                        if-layers = <1 2>;
-                        then-layer = <3>;
-                };
+
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -68,6 +65,10 @@
    &kp LSHFT &trans   &kp C_PREVIOUS &kp C_PAUSE   &kp C_NEXT   &kp C_VOLUME_DOWN      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp RALT   &kp RET   &trans    &kp RALT
                         >;
+                };
+                conditional_layer_1 {
+                        if-layers = <1 2>;
+                        then-layer = <3>;
                 };
         };
 };
