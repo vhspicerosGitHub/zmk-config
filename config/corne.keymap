@@ -10,10 +10,10 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap";
+                compatible = "zmk,keymap,conditional-layers";
                 conditional_layer_1 {
-                        if-layers = <1 2>;
-                        then-layer = <3>;
+                        if-layers = <raise_layer lower_layer>;
+                        then-layer = <adjust_layer>;
                 };
                 default_layer {
 // -----------------------------------------------------------------------------------------
