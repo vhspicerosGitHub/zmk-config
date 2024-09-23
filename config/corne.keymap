@@ -12,8 +12,8 @@
         keymap {
                 compatible = "zmk,keymap,conditional-layers";
                 conditional_layer_1 {
-                        if-layers = <raise_layer lower_layer>;
-                        then-layer = <adjust_layer>;
+                        if-layers = <1 2>;
+                        then-layer = <3>;
                 };
                 default_layer {
 // -----------------------------------------------------------------------------------------
@@ -56,7 +56,7 @@
                         >;
                 };
 
-                        adjust_layer {
+                adjust_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
